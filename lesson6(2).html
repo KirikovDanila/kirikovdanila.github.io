@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            align-items: flex-start;
+        }
+        p {
+            border: 5px solid green;
+        }
+        .item:nth-child(1) {
+            height: 200px;
+        }
+        .item:nth-child(2) {
+            height: 100px;
+        }
+        .item:nth-child(3) {
+            height: 300px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+            <p class="item">Первый элемент.</p>
+            <p class="item">Второй элемент.</p>
+            <p class="item">Третий элемент.</p>
+    </div>
+</body>
+</html>
