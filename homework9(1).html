@@ -30,25 +30,32 @@
             display: flex;
             margin: .5em;
         }
-        .img {
+        .cont {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            flex-direction: column;
+            height: 100%;
         }
         .container-2 p {
             font-size: 2em;
             justify-content:space-evenly;
             text-align: end;
         }
-        .img h2 {
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
         .navbar {
             padding: 3em;
             border: 3px solid grey;
             margin: 1em 0;
+        }
+        .img-1, .img-2 {
+            width: 100%;
+            background-color: black;
+        }
+        .img-1 {
+            flex-basis: 20%;
+        }
+        .img-2 {
+            flex-basis: 40%;
         }
         </style>
 </head>
@@ -57,23 +64,29 @@
         <div class="top">
             <h1>Название сайта</h1>
         </div>
+        <div class="container">
             <div class="navbar">Навигация по разделам</div>
             <div class="navbar">Навигация по разделам</div>
             <div class="navbar">Навигация по разделам</div>
             <div class="navbar">Навигация по разделам</div>
+        </div>
     </div>
     <div class="container-2">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eum iste ad. Ipsum provident soluta totam impedit
-                consectetur facere, ut cum. Voluptatem adipisci minima quibusdam! Obcaecati veniam consequuntur nisi voluptates.</p>
-    <div class="img"><h2>Картинка</h2>
+        <div class="cont">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quia ducimus, molestias voluptatum
-            consectetur necessitatibus in rem qui, velit sapiente sed, dolorem ab excepturi sit a rerum omnis itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quia ducimus, molestias voluptatum
-                consectetur necessitatibus in rem qui, velit sapiente sed, dolorem ab excepturi sit a rerum omnis itaque!</p>
+                consectetur necessitatibus in rem qui, velit sapiente sed, dolorem ab excepturi sit a rerum omnis itaque!
+                </p>
+            <div class="img-1"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quia ducimus, molestias voluptatum
+            consectetur necessitatibus in rem qui, velit sapiente sed, dolorem ab excepturi sit a rerum omnis itaque!
+            </p>
         </div>
-            <div class="img"><h2>Картинка</h2></div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quia ducimus, molestias voluptatum
-                consectetur nece Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi consectetur sint, fuga laborum, aspernatur eius debitis aperiam veritatis, illo obcaecati asperiores? Recusandae veniam nihil officiis adipisci ut cum! Dolorum, a. </p>
-
+        <div class="cont">
+            <div class="img-2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quia ducimus, molestias voluptatum
+            consectetur necessitatibus in rem qui, velit sapiente sed, dolorem ab excepturi sit a rerum omnis itaque!
+            </p>
+        </div>
     </div>
 </body>
 </html>
