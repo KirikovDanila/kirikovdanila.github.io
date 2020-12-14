@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .top {
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(img_parallax3.jpg);
+
+    }
+    .bottom {
+        overflow-x: hidden;
+        height: 100vh;
+        display: block;
+        background-image: url(mono.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+    @keyframes falling_down {
+        0% {
+            top: -5px;
+        }        
+        100% {
+            top: 200vh;
+        }
+    }  
+    .star {
+        position: absolute;
+        background-color: rgb(248, 247, 247);
+        top: 0;
+    }
+    .star:nth-child(1) {
+        width: 2px;
+        height: 2px;
+        left: 5vw;
+        animation: falling_down 6s .2s linear infinite;
+    }
+    .star:nth-child(2) {
+        width: 3px;
+        height: 3px;
+        left: 15vw;
+        animation: falling_down 6.5s 5s linear infinite;
+    }
+    .star:nth-child(3) {
+        width: 2px;
+        height: 3px;
+        left: 45vw;
+        animation: falling_down 7.5s 2s linear infinite;
+    }
+    .star:nth-child(4) {
+        width: 3px;
+        height: 4px;
+        left: 60vw;
+        animation: falling_down 8s .7s linear infinite;
+    }
+    .title {
+        padding: 2em;
+        font-size: 2em;
+        font-weight: 900;
+        color: white;
+        background-color: seagreen;
+        width: 100%;
+        text-align: center;
+        z-index: 9999;
+        position: absolute;
+        top: 100vh;
+    } 
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="top"></div>
+    <div class="title">СДЕЛАЙ САМ! НЕ ПОДСМАТРИВАЙ В КОНСОЛЬ РАЗРАБОТЧИКА!</div>
+    <div class="bottom"></div>
+</body>
+</html>
