@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            height: 100%;
+            grid-template-rows: 1.5fr 4fr 3fr 2fr;
+            grid-template-columns: 1fr 1.2fr 2fr;
+        }
+
+        main {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #f50000;
+        }
+        
+    </style>
 </head>
+
 <body>
     <div class="grid-container">
-<main>
+        <main>
 
-</main>
-<div class="tasty">
+        </main>
+        <div class="tasty">
 
-</div>
-<div class="healthy">
+        </div>
+        <div class="healthy">
 
-</div>
-<footer>
+        </div>
+        <footer>
 
-</footer>
-<nav>
+        </footer>
+        <nav>
 
-</nav>
-<div class="icecream">
+        </nav>
+        <div class="icecream">
 
-</div>
+        </div>
     </div>
 </body>
+
 </html>
