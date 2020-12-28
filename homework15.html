@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            align-items: flex-start;
+        }
+        .item:nth-child(1) {
+            width: 450px;
+            height: 150px;
+            background-color: rgb(255, 0, 179);
+        }
+        .item:nth-child(2) {
+            width: 1000px;
+            height: 150px;
+            background-color: rgb(145, 14, 138);
+        }
+        .item:nth-child(3) {
+            width: 450px;
+            height: 150px;
+            background-color: rgb(247, 115, 240);
+        }
+        p {
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <p class="item">Правый элемент</p>
+        <p class="item">Главный элемент</p>
+        <p class="item">Левый элемент</p>
+</div>
+</body>
+</html>
