@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1.5fr 4fr 3fr 2fr;
+    grid-template-columns: 1fr 1.2fr 2fr;
+}
+main {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #FCB1B1;
+}
