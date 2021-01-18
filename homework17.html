@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .bgimg-1 {
+        height: 100vh;
+        background-color: blueviolet;
+    }
+    .bgimg-2 {
+        height: 100vh;
+        background-color: grey;
+    }
+    .bgimg-1, .bgimg-2 {
+        opacity: 0.95;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        body {
+        margin: 0;
+        }
+        .border {
+            background-color: white;
+            padding: 1.25em;
+            font-weight: 900;
+            font-size: 2em;
+        }
+        div h1 {
+           padding: 1.75em 1em;
+           margin: 0;
+           background-color: white;
+           color: rgb(0, 0, 0);
+           font-weight: 600;
+           font-size: 1.25em;
+           text-align: center;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .left {
+        background-image: url('kn_1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        height: 100%;
+        width: 25%;
+        animation: onloadLeft 1s linear;
+        position: absolute;
+        left: 10%;
+    }
+        .right {
+        background-image: url('kn_2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        height: 100%;
+        width: 25%;
+        animation: onloadRight 1s linear;
+        position: absolute;
+        right: 10%;
+    }
+    .download {
+        font-family: 'Cartoons 123';
+        font-size: 60px;
+        border: 5px solid white;
+        color: white;
+        padding: .25em;
+        margin-bottom: 1em;
+        cursor: pointer;
+    }
+    .knights {
+        height: 45%;
+        width: 100%;
+        position: relative;
+    }
+    @keyframes onloadLeft {
+        0% {
+            opacity: 0;
+            left: -400px;
+        }
+
+        100% {
+            opacity: 1;
+            left: 10%;
+        }
+    }
+    @keyframes onloadRight {
+        0% {
+            opacity: 0;
+            right: -400px;
+        }
+
+        100% {
+            opacity: 1;
+            right: 10%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border"></span>
+        </div>
+    </div>
+    <div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio similique facilis nam porro nemo, dignissimos et perferendis explicabo totam ex. Praesentium eum eaque rem distinctio. Esse nulla itaque et!</h1>
+    </div>
+    <div class="bgimg-2"> 
+        <div class="caption">
+            <span class="border"></span>
+        </div>
+    </div>
+</body>
+</html>
