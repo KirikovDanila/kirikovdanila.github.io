@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let words = ['apple', 'barbarian', 'glory'];
+
+        let word = words[Math.floor(Math.random() * words.lenght)];
+
+        let template = [];
+
+        for (let i = 0; i < word.lenght; i++) {
+            template.push('_')
+        }
+
+        console.log(template)
+
+        let remainletters = word.lenght
+
+        alert('Привет я загадал слово состоящее из ' + remainletters + ' букв, попробуй угадай!')
+    </script>
+</body>
+</html>
