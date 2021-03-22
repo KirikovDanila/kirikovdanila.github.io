@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let field = ['*', '_', '_', '_']
+
+        while (true) {
+            alert(field.join(' '))
+            let userInput = prompt('Укажите направление для перемещения * - left, right. А также exit для выхода')
+            let location = field.indexOf('*')
+            if (userInput === 'exit' || userInput === null) {
+                alert('Спасибо за игру!')
+                break
+            } else if (userInput = 'left') {
+                if (location > 0) {
+                    field[location] = '_'
+                    field[location - 1] = '*'
+                } else {
+                    alert('Налево нельзя!')
+                }
+            } else if (userInput === 'right') {
+                if (location + 1 < field.length) {
+                    field[location] = '_'
+                    field[location + 1] = '*'
+                } else {
+                    alert('Направо нельзя!')
+                }
+            }
+        }
+    </script>
+</body>
+</html>

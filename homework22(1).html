@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let riddle = 'Чем можно поделиться 1 раз?'
+        let answer = 'секретом'
+
+        alert('Попробуй отгадать загадку - ' + riddle)
+
+        let guess = ''
+        while (guess !== answer) {
+            guess = prompt('Ваш ответ: ').toLowerCase()
+            if (guess !== answer) {
+                alert('Ответ неверный, попробуй еще разок :)')
+            }
+        }
+        alert(guess + ' Это правильный ответ! Молодец =)')
+    </script>
+</body>
+</html>
