@@ -10,19 +10,40 @@
     <script>
         let words = ['apple', 'barbarian', 'glory'];
 
-        let word = words[Math.floor(Math.random() * words.lenght)];
+        let word = words[Math.floor(Math.random() * words.length)];
 
         let template = [];
 
-        for (let i = 0; i < word.lenght; i++) {
+        for (let i = 0; i < word.length; i++) {
             template.push('_')
         }
 
         console.log(template)
 
-        let remainletters = word.lenght
+        let remainletters = word.length
 
         alert('Привет я загадал слово состоящее из ' + remainletters + ' букв, попробуй угадай!')
+        
+        while (remainletters > 0) {
+
+            alert(template.join(' '));
+            let guess = prompt('Введите букву: ').toLowerCase();
+            
+        if (guess === null) {
+            break;
+        } else if (guess.length !== 1) {
+            alert('Введите одну букву!')
+        } else {
+            for (const key in word) {
+                if (word[key] === guess) {
+                    template[key] = guess;
+                    remainletters--;
+                }
+            }
+        }
+    }
+    alert(template.join(" "));
+    alert("Молодец это правильный ответ! " + word);
     </script>
 </body>
 </html>
