@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ body { 
+ padding: 0;
+ margin: 0;
+ overflow-x: hidden; 
+}
+ .top, .bottom {
+ height: 100vh;
+ background-color: black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ }
+ .top > h1, .bottom > h1 {
+ color:#fefffc;
+ font-size: 3em;
+ margin: 0;
+ font-family: sans-serif
+
+ } 
+
+ .mid {
+ height: 100vh;
+ background-color: white ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ }
+
+ .mid > h2 {
+ color:black;
+ font-size: 4em;
+ margin:0;
+ font-family: sans-serif;
+ z-index: 999;
+ }
+ .box:nth-child(1) {
+ 
+position: absolute;
+width: 450px;
+height: 450px; 
+border: 25px solid green;
+top: 30%;
+left: 15%;
+
+}
+
+.box:nth-child(2) {
+
+position: absolute;
+width: 150px;
+height: 150px;
+transform: rotate(75deg);
+ border: 10px solid red;
+border-radius: 50%;
+top: 43%;
+Left: 35%;
+}
+.box:nth-child(3) {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(50deg);
+    border: 10px solid blue;
+    border-radius: 50%;
+    top: 45%;
+    Left: 40%;
+
+ </style>
+
+</head>
+<body>
+ <div class="top">
+ <h1>Scroll Down</li>
+ 
+ </div>
+ 
+ <div class="mid">
+ 
+ <div class="box"></div>
+ 
+ <div class="box"></div>
+ 
+ <div class="box"></div>
+ 
+ <h2>Animation<h2>
+ 
+ </div>
+ 
+ <div class="bottom">
+ 
+ <h1>Scroll Up</ht>
+ 
+ </div>
+ 
+ 
+</body>
+</html>
